@@ -1,6 +1,6 @@
 {
  "name": "@discursa/cli",
- "version": "0.0.1",
+ "version": "0.0.2",
  "description": "CLI for discursa",
  "main": "bin/index.ts",
  "author": "OneLiL05",
@@ -10,7 +10,7 @@
   "url": "https://github.com/discursa/discursa-cli.git"
  },
  "bugs": {
-	"url": "https://github.com/discursa/discursa-cli/issues"
+  "url": "https://github.com/discursa/discursa-cli/issues"
  },
  "bin": {
   "discursa": "bin/index.ts"
