@@ -44,6 +44,19 @@ Writing './app/common/components/Button/Button.types.ts'
 Writing './app/common/components/Button/Button.tsx'
 ```
 
+#### generate query
+
+Generate a query
+
+```shell
+yarn discursa generate component <name> <featureName>
+```
+
+**Arguments and options**  | **Description**  |
+---                        |              --- |
+`name`                     | Name of the query |
+`path`                     | Name of feature where query will be generated |
+
 ## Additional info
 
 - 📫 Send feedback: [@onelil05](https://twitter.com/onelil05)

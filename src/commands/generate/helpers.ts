@@ -29,9 +29,31 @@ const getComponentTypesPath = (name: string, path: string) => {
 	return typesPath
 }
 
+const getQueryPath = (name: string, featureName: string) => {
+	const queryPath = `./app/${featureName}/api/queries/${name}.ts`
+
+	return queryPath
+}
+
+const getQueryHookName = (name: string) => {
+	const queryHooksName = `use${name.slice(3)}Query`
+
+	return queryHooksName
+}
+
+const getQueryHookPath = (name: string, featureName: string) => {
+	const queryHookName = getQueryHookName(name)
+	const queryHookPath = `./app/${featureName}/hooks/${queryHookName}`
+
+	return queryHookPath
+}
+
 export {
 	getComponentPath,
 	getComponentStylesPath,
 	getComponentTypesPath,
 	generateDir,
+	getQueryPath,
+	getQueryHookName,
+	getQueryHookPath,
 }
