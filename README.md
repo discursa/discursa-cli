@@ -53,7 +53,7 @@ yarn discursa generate query <name> <featureName>
 **Arguments and options**  | **Description**  |
 ---                        |              --- |
 `name`                     | Name of the query |
-`path`                     | Name of feature where query will be generated |
+`featureName`              | Name of feature where query will be generated |
 
 | Attention! name of query must start from `get` word
 
