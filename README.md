@@ -21,13 +21,14 @@ yarn discursa generate <type>
 Generate a component
 
 ```shell
-yarn discursa generate component <name> [path]
+yarn discursa generate component [options] <name> [path]
 ```
 
 **Arguments and options**  | **Description**  |
 ---                        |              --- |
 `name`                     | Name of the component |
 `path`                     | Path of the component (default: `app/common/components`) |
+`-f. --force`              | Overwrite existing files |
 
 ##### Example
 
@@ -47,13 +48,14 @@ Writing './app/common/components/Button/Button.tsx'
 Generate a query
 
 ```shell
-yarn discursa generate query <name> <featureName>
+yarn discursa generate query [options] <name> <featureName>
 ```
 
 **Arguments and options**  | **Description**  |
 ---                        |              --- |
 `name`                     | Name of the query |
 `featureName`              | Name of feature where query will be generated |
+`-f, --force`              | Overwrite existing files |
 
 | Attention! name of query must start from `get` word
 

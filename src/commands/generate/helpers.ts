@@ -29,6 +29,13 @@ const getComponentTypesPath = (name: string, path: string) => {
 	return typesPath
 }
 
+const getComponentDirPath = (name: string, path: string) => {
+	const capitalisedName = getCapitalisedText(name)
+	const componentDirPath = `${path}/${capitalisedName}`
+
+	return componentDirPath
+}
+
 const getQueryPath = (name: string, featureName: string) => {
 	const queryPath = `./app/${featureName}/api/queries/${name}.ts`
 
@@ -52,6 +59,7 @@ export {
 	getComponentPath,
 	getComponentStylesPath,
 	getComponentTypesPath,
+	getComponentDirPath,
 	generateDir,
 	getQueryPath,
 	getQueryHookName,
