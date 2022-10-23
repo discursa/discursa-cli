@@ -3,7 +3,7 @@ import { generateComponent } from "./component"
 import { generateComponentStyles } from "./styles"
 import { generateComponentTypes } from "./types"
 
-const generateAllComponentFiled = (name: string, path: string) => {
+const generateAllComponentFiled = (name, path) => {
 	generateDir(name, path)
 	generateComponentStyles(name, path)
 	generateComponentTypes(name, path)

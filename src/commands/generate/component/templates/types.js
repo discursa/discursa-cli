@@ -1,6 +1,6 @@
 import { getCapitalisedText } from "../../../../utils"
 
-const getComponentTypes = (name: string) => {
+const getComponentTypes = (name) => {
 	const capitalisedName = getCapitalisedText(name)
 
 	const template = `interface ${capitalisedName}Props {}

@@ -1,6 +1,6 @@
 import { getCapitalisedText } from "../../../../utils"
 
-const getComponent = (name: string) => {
+const getComponent = (name) => {
 	const capitalisedName = getCapitalisedText(name)
 
 	const template = `import { FC } from "react"

@@ -1,7 +1,7 @@
 import { queryHookGenerator } from "./hook"
 import { queryGenerator } from "./query"
 
-const generateAllQueryFiles = (name: string, featureName: string) => {
+const generateAllQueryFiles = (name, featureName) => {
 	queryHookGenerator(name, featureName)
 	queryGenerator(name, featureName)
 }

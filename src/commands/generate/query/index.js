@@ -1,7 +1,6 @@
 import { Command } from "commander"
 import { nameArgument } from "../../../arguments"
 import { forceOption } from "../../../options"
-import { GenerateCommandOptions } from "../types"
 import { queryAction } from "./actions"
 import { featureNameArgument } from "./arguments"
 
@@ -12,10 +11,8 @@ generateQuery
 	.addArgument(nameArgument)
 	.addArgument(featureNameArgument)
 	.addOption(forceOption)
-	.action(
-		(name: string, featureName: string, options: GenerateCommandOptions) => {
-			queryAction(name, featureName, options)
-		}
-	)
+	.action((name, featureName, options) => {
+		queryAction(name, featureName, options)
+	})
 
 export { generateQuery }

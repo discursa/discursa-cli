@@ -1,4 +1,4 @@
-const getCapitalisedText = (text: string) => {
+const getCapitalisedText = (text) => {
 	return text[0].toUpperCase() + text.slice(1)
 }
 

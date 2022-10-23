@@ -3,7 +3,7 @@ import pc from "picocolors"
 import { getComponentPath } from "../../../helpers"
 import { getComponent } from "../../templates/component"
 
-const generateComponent = (name: string, path: string) => {
+const generateComponent = (name, path) => {
 	const componentPath = getComponentPath(name, path)
 	const template = getComponent(name)
 

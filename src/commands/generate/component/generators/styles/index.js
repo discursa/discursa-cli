@@ -3,7 +3,7 @@ import { writeFile, open } from "fs"
 import { getComponentStylesPath } from "../../../helpers"
 import { getComponentStyles } from "../../templates/styles"
 
-const generateComponentStyles = (name: string, path: string) => {
+const generateComponentStyles = (name, path) => {
 	const stylesPath = getComponentStylesPath(name, path)
 	const template = getComponentStyles(name)
 

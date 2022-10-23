@@ -1,14 +1,9 @@
 import { existsSync } from "fs"
 import pc from "picocolors"
 import { getComponentDirPath } from "../../helpers"
-import { GenerateCommandOptions } from "../../types"
 import { generateAllComponentFiled } from "../generators"
 
-const componentAction = (
-	name: string,
-	path: string,
-	options: GenerateCommandOptions
-) => {
+const componentAction = (name, path, options) => {
 	const componentDirPath = getComponentDirPath(name, path)
 
 	console.log(pc.blue(pc.bold(`Generating component files in ${path}...`)))

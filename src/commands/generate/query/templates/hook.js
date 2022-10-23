@@ -1,6 +1,6 @@
 import { getQueryHookName } from "../../helpers"
 
-const queryHookTemplate = (name: string, fatureName: string) => {
+const queryHookTemplate = (name, fatureName) => {
 	const queryHookName = getQueryHookName(name)
 
 	const template = `import { useQuery } from "@blitzjs/rpc"

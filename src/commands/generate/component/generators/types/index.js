@@ -3,7 +3,7 @@ import { writeFile, open } from "fs"
 import { getComponentTypesPath } from "../../../helpers"
 import { getComponentTypes } from "../../templates/types"
 
-const generateComponentTypes = (name: string, path: string) => {
+const generateComponentTypes = (name, path) => {
 	const typesPath = getComponentTypesPath(name, path)
 	const template = getComponentTypes(name)
 

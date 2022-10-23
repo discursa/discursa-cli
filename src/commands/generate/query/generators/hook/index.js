@@ -3,7 +3,7 @@ import { open, writeFile } from "fs"
 import { getQueryHookPath } from "../../../helpers"
 import { queryHookTemplate } from "../../templates/hook"
 
-const queryHookGenerator = (name: string, featureName: string) => {
+const queryHookGenerator = (name, featureName) => {
 	const queryHookPath = getQueryHookPath(name, featureName)
 	const template = queryHookTemplate(name, featureName)
 

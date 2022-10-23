@@ -1,14 +1,9 @@
-import pc from "picocolors"
 import { existsSync } from "fs"
-import { generateAllQueryFiles } from "../generators"
+import pc from "picocolors"
 import { getQueryHookPath, getQueryPath } from "../../helpers"
-import { GenerateCommandOptions } from "../../types"
+import { generateAllQueryFiles } from "../generators"
 
-const queryAction = (
-	name: string,
-	featureName: string,
-	options: GenerateCommandOptions
-) => {
+const queryAction = (name, featureName, options) => {
 	const featureDir = `./app/features/${featureName}`
 	const queryPath = getQueryPath(name, featureName)
 	const queryHookPath = getQueryHookPath(name, featureName)

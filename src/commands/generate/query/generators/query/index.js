@@ -3,7 +3,7 @@ import { open, writeFile } from "fs"
 import { getQueryPath } from "../../../helpers"
 import { queryTemplate } from "../../templates/query"
 
-const queryGenerator = (name: string, featureName: string) => {
+const queryGenerator = (name, featureName) => {
 	const queryPath = getQueryPath(name, featureName)
 	const template = queryTemplate(name, featureName)
 
