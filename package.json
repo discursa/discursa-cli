@@ -1,6 +1,6 @@
 {
  "name": "@discursa/cli",
- "version": "0.0.2",
+ "version": "0.0.3",
  "description": "CLI for discursa",
  "main": "bin/index.js",
  "author": "OneLiL05",
